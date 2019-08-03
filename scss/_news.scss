@@ -1,0 +1,43 @@
+.news {
+    background-image: url(../img/bg2.jpg);
+    .title {
+        background-size: cover;
+        color: white;
+    }
+    .news-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        @include tab {
+            height: 1300px;
+        }
+
+    }
+    .news-child {
+        width: 30%;
+        background-color: white;
+        @include tab {
+            width: 100%;
+        }
+        .n-img {
+            vertical-align:bottom;
+            object-fit: cover;
+        }
+        .n-child-text-body {
+            padding: 20px 22px;
+            .n-child-text-body-container {
+                .n-day {
+                    display: inline-block;
+                    font-size: 10px;
+                }
+                .n-title {
+                    font-size: 15px;
+                }
+                .n-text {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

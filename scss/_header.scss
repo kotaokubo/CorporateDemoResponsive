@@ -1,0 +1,44 @@
+.top {
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    position: relative;
+    .pc-header-nav {
+        padding: 22px 20px;
+        display: flex;
+        justify-content: space-between;
+        ul {
+            display: flex;
+            @include tab {
+                display: none;
+            }    
+            li {
+                margin-left: 55px;             
+                &:first-child {
+                    margin-left: 0; 
+                }
+            }   
+        }
+    }
+}
+
+.tab-header-nav{
+    @include px {
+        display: none;
+    }
+    @include tab {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 18px;
+        width: 25px;
+        span {
+            display: inline-block;     
+            width: 100%;
+            background-color: white;
+            height: 1px;  
+        }
+    }
+}

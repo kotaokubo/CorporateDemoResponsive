@@ -1,0 +1,23 @@
+.entry {
+    position: relative;
+    height: 500px;
+}
+.entry-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    max-width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;
+    .entry-content {
+        font-size: 18px;
+    }
+}
+.button {
+    @include main-btn(100%);
+    
+}
