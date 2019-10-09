@@ -223,7 +223,7 @@ button {
         margin-right: 4px; }
 
 .about {
-  background-color: #F8F8F8; }
+  background-color: #f8f8f8; }
 
 .about-wrapper {
   display: flex;
@@ -249,13 +249,16 @@ button {
     .about-wrapper .about-child .about-child-container {
       width: 60%;
       height: 500px; }
-    .about-wrapper .about-child .a-title {
-      font-size: 22px; }
-    .about-wrapper .about-child .a-img {
-      margin-top: 50px; }
-    .about-wrapper .about-child .a-text {
-      margin-top: 100px;
-      font-size: 12px; }
+      .about-wrapper .about-child .about-child-container .a-title {
+        font-size: 22px; }
+      .about-wrapper .about-child .about-child-container .a-img {
+        margin-top: 50px; }
+      .about-wrapper .about-child .about-child-container .a-text {
+        margin-top: 100px;
+        font-size: 12px; }
+      @media screen and (max-width: 375px) {
+        .about-wrapper .about-child .about-child-container {
+          width: 100%; } }
 
 .news {
   background-image: url(../img/bg2.jpg); }
